@@ -6,6 +6,7 @@ import (
 )
 
 type Handler interface {
+	GetSources(c *gin.Context)
 	GetMangas(c *gin.Context)
 	GetMangaDetail(c *gin.Context)
 	GetChapters(c *gin.Context)
@@ -18,6 +19,15 @@ type mangaHandler struct {
 
 func NewMangaHandler(scrapers map[string]scraper.Scraper) Handler {
 	return &mangaHandler{scrapers}
+}
+
+func (h *mangaHandler) GetSources(c *gin.Context) {
+	var sources []string
+	for key, _ := range h.scrapers {
+		sources = append(sources, key)
+	}
+
+	c.JSON(200, sources)
 }
 
 func (h *mangaHandler) GetMangas(c *gin.Context) {
@@ -75,7 +85,7 @@ func (h *mangaHandler) GetChapters(c *gin.Context) {
 
 	}
 
-	res := GetChapterResposne{chapters}
+	res := GetChapterResponse{chapters}
 	c.JSON(200, res)
 }
 

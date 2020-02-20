@@ -19,7 +19,7 @@ type GetChapterRequest struct {
 	Path   string `form:"path"`
 }
 
-type GetChapterResposne struct {
+type GetChapterResponse struct {
 	Chapters []scraper.Chapter `json:"chapters"`
 }
 
