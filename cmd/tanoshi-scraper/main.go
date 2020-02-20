@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/fadhlika/tanoshi/internal/handler"
-	"github.com/fadhlika/tanoshi/internal/router"
-	"github.com/fadhlika/tanoshi/pkg/scraper"
+	"github.com/fadhlika/tanoshi-scraper/internal/handler"
+	"github.com/fadhlika/tanoshi-scraper/internal/router"
+	"github.com/fadhlika/tanoshi-scraper/pkg/scraper"
 )
 
 func main() {

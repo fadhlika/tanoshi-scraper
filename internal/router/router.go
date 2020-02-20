@@ -1,7 +1,7 @@
 package router
 
 import (
-	"github.com/fadhlika/tanoshi/internal/handler"
+	"github.com/fadhlika/tanoshi-scraper/internal/handler"
 	"github.com/gin-gonic/gin"
 )
 

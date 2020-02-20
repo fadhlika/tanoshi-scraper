@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/fadhlika/tanoshi/pkg/scraper"
+	"github.com/fadhlika/tanoshi-scraper/pkg/scraper"
 	"github.com/gin-gonic/gin"
 )
 

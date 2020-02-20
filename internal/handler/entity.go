@@ -1,6 +1,6 @@
 package handler
 
-import "github.com/fadhlika/tanoshi/pkg/scraper"
+import "github.com/fadhlika/tanoshi-scraper/pkg/scraper"
 
 type GetMangaByQueryRequest struct {
 	Source        string `form:"source"`
