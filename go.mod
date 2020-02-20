@@ -1,4 +1,4 @@
-module github.com/fadhlika/tanoshi
+module github.com/fadhlika/tanoshi-scraper
 
 go 1.13
 
